@@ -1,1 +1,1 @@
-web: "sirv public --no-clear"
+web: npm start

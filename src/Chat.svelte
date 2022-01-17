@@ -38,7 +38,7 @@
     };
 
     // Get Messages
-    db.get('chat')
+    db.get('fchat')
       .map(match)
       .once(async (data, id) => {
         if (data) {
@@ -47,7 +47,7 @@
 
           var message = {
             // transform the data
-            who: await db.user(data).get('alias'), // a user might lie who they are! So let the user system detect whose data it is.
+            who: await db.user(data).get('alias'), // user system detect whose data it is.
             what: (await SEA.decrypt(data.what, key)) + '', // force decrypt as text.
             when: GUN.state.is(data, 'what'), // get the internal timestamp for the what property.
           };
@@ -68,7 +68,7 @@
     const secret = await SEA.encrypt(newMessage, '#foo');
     const message = user.get('all').set({ what: secret });
     const index = new Date().toISOString();
-    db.get('chat').get(index).put(message);
+    db.get('fchat').get(index).put(message);
     newMessage = '';
     canAutoScroll = true;
     autoScroll();

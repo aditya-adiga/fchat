@@ -85,12 +85,7 @@
       <div class="dummy" bind:this={scrollBottom} />
     </main>
 
-    <form on:submit|preventDefault={sendMessage}>
-      <input type="text" placeholder="Type a Message" bind:value={newMessage} maxlength="100" />
-      <button type="submit" disabled={!newMessage} class="btn mr-md-2 mb-md-0 mb-2 btn-outline-primary">
-              <img src={`./send.png`} alt="send"/>SEND
-            </button>
-    </form>
+    
     {#if !canAutoScroll}
     <div class="scroll-button">
       <button on:click={autoScroll} class:red={unreadMessages}>
@@ -100,7 +95,9 @@
         <img src={`./scrolldown.png`}  alt="scroll"/>
         {/if}
       </button>
+      
     </div>
+    
    {/if}
   {:else}
     <main>
@@ -108,3 +105,11 @@
     </main>
   {/if}
 </div>
+{#if $username}
+<form on:submit|preventDefault={sendMessage}>
+  <input type="text" placeholder="Type a Message" bind:value={newMessage} maxlength="100" />
+  <button type="submit" disabled={!newMessage} class="btn mr-md-2 mb-md-0 mb-2 btn-outline-primary">
+    <img src={`./send.png`} alt=" "/>SEND
+        </button>
+</form>
+{/if}

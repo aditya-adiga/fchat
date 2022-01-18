@@ -102,7 +102,7 @@ header {
 	height: 8vh;
 	position: fixed;
 	bottom: 0;
-	right: 595px;
+	justify-content: center;
 	background-color: #A2A2A1FF;
 	width: 100%;
 	max-width: 728px;

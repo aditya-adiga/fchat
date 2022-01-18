@@ -79,7 +79,6 @@ header {
 	min-height: 100vh;
 	background-color: #F1F4FFFF;
   }
-  
   main {
 	height: 84vh;
 	overflow-y: scroll;
@@ -159,7 +158,7 @@ header {
   }
   
   label {
-	  color: white;
+	  color: #A2A2A1FF;
 	  margin: 0.5rem 0;
   }
   ul, li {

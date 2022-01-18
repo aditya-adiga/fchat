@@ -19,7 +19,7 @@
   }
 </script>
 
-<label for="username">Username</label>
+<label for="username" style="color:black">Username</label>
 <input name="username" bind:value={username} minlength="3" maxlength="16" />
 
 <label for="password">Password</label>

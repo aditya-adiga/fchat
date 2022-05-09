@@ -11,7 +11,7 @@ This is the implementation of the concept of Decentralization in its true form.
 Here we use a Chat System which is built on top of a database which is distributed across a number of devices and uses resources provided by those devices and uses that to run the  application thus removing the need of a centralized database.The real reason to use decentralized database is because it provides security in the best form when it is paired with end to end encryption making it very tedious for an attack to disintegrate the system.  
 
 I had taken up this project as a part of my curriculum in the Fall semester of the third year of my engineering.I have documented this pretty well in the project report that i will be putting down here:
-<object data="/Documentation/ProjectReport.pdf" type="application/pdf" width="100%"></object>
+![Project Report](/Documentation/ProjectReport.pdf)
 
 The live production of this current version of the application is available at: [F-chat](https://f-chat-26177.web.app/)
 

@@ -13,7 +13,7 @@ Here we use a Chat System which is built on top of a database which is distribut
 I had taken up this project as a part of my curriculum in the Fall semester of the third year of my engineering.I have documented this pretty well in the project report that i will be putting down here:
 <object data="/Documentation/ProjectReport.pdf" type="application/pdf" width="100%"></object>
 
-The live production of this current version of the application is available at: [F-chat](f-chat-26177.web.app/)
+The live production of this current version of the application is available at: [F-chat](https://f-chat-26177.web.app/)
 
 
 ## What next?
